@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD - JavaScript String, Number, dan Konversi Data</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="lkpd-container">
+        <!-- Header Dokumen -->
+        <header class="lkpd-header">
+            <h1>LEMBAR KERJA PESERTA DIDIK (LKPD)</h1>
+            <h2>JavaScript - String, Number, dan Konversi Data</h2>
+            <table class="identitas-table">
+                <tr>
+                    <td><strong>Satuan Pendidikan</strong></td>
+                    <td>: SMKN 1 Garut[cite: 1]</td>
+                    <td><strong>Nama</strong></td>
+                    <td>: M. Maulana A.F.</td>
+                </tr>
+                <tr>
+                    <td><strong>Mata Pelajaran</strong></td>
+                    <td>: Dasar-Dasar Pengembangan Perangkat Lunak dan Gim[cite: 1]</td>
+                    <td><strong>Kelas / No. Absen</strong></td>
+                    <td>: X PPLG 1 / ...</td>
+                </tr>
+                <tr>
+                    <td><strong>Kelas/Fase</strong></td>
+                    <td>: X / Fase E[cite: 1]</td>
+                    <td><strong>Tanggal</strong></td>
+                    <td>: 19 Oktober 2026</td>
+                </tr>
+                <tr>
+                    <td><strong>Alokasi Waktu</strong></td>
+                    <td>: 2 x 45 menit[cite: 1]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </header>
+
+        <!-- A. Tujuan Pembelajaran -->
+        <section class="lkpd-section">
+            <h3>A. TUJUAN PEMBELAJARAN</h3>
+            <p>Setelah menyelesaikan LKPD ini, peserta didik mampu: (1) membedakan String dan Number; (2) menjelaskan bahwa prompt() menghasilkan String; (3) menggunakan Number() dan String(); (4) menganalisis kesalahan akibat tipe data; dan (5) membuat program input dan perhitungan sederhana[cite: 1].</p>
+        </section>
+
+        <!-- B. Petunjuk Kerja -->
+        <section class="lkpd-section">
+            <h3>B. PETUNJUK KERJA</h3>
+            <ul>
+                <li>Kerjakan mandiri terlebih dahulu[cite: 1].</li>
+                <li>Diskusikan melalui Think Pair Share[cite: 1].</li>
+            </ul>
+        </section>
+
+        <!-- C. Aktivitas 1 -->
+        <section class="lkpd-section">
+            <h3>C. AKTIVITAS 1</h3>
+            <p>Prediksi hasil sebelum menjalankan kode. Jalankan kode dan amati[cite: 1].</p>
+            <p>Simpan file sebagai <code>lkpd_string_number_maulana.js</code>[cite: 1].</p>
+            
+            <div class="box-soal">
+                <h4>EKSPERIMEN 10 + 20[cite: 1]</h4>
+                <p>Jangan jalankan terlebih dahulu. Prediksikan hasil[cite: 1]:</p>
+                <pre><code>let a = "10";
+let b = "20";
+console.log(a + b);</code></pre>
+                
+                <table class="lkpd-table">
+                    <tr>
+                        <th>Pertanyaan</th>
+                        <th>Jawaban Kamu (M. Maulana A.F.)</th>
+                    </tr>
+                    <tr>
+                        <td>Apa output program?[cite: 1]</td>
+                        <td>"1020"[cite: 1]</td>
+                    </tr>
+                    <tr>
+                        <td>Mengapa hasil tersebut terjadi?[cite: 1]</td>
+                        <td>Karena variabel <code>a</code> dan <code>b</code> bertipe String (teks), sehingga operator <code>+</code> melakukan penggabungan teks (concatenation), bukan penjumlahan matematika[cite: 1].</td>
+                    </tr>
+                    <tr>
+                        <td>Apakah a dan b bertipe Number?[cite: 1]</td>
+                        <td>Tidak, keduanya bertipe String[cite: 1].</td>
+                    </tr>
+                </table>
+                <br>
+                <p><strong>Uji sekarang. Apakah prediksimu benar? Jelaskan[cite: 1].</strong></p>
+                <p><em>Jawaban:</em> Ya, prediksi benar. Program menghasilkan "1020" karena nilai di dalam tanda kutip dibaca sebagai teks.</p>
+                <button onclick="jalankanAktivitas1()">Jalankan Eksperimen 1 di Console</button>
+            </div>
+        </section>
+
+        <!-- D. Aktivitas 2 -->
+        <section class="lkpd-section">
+            <h3>D. AKTIVITAS 2: MENEMUKAN TIPE DATA</h3>
+            <p>Jalankan[cite: 1]:</p>
+            <pre><code>let nama = "Asep";
+let umur = 16;
+console.log(typeof nama);
+console.log(typeof umur);</code></pre>
+
+            <table class="lkpd-table">
+                <tr>
+                    <th>Variabel[cite: 1]</th>
+                    <th>Prediksi</th>
+                    <th>Hasil typeof[cite: 1]</th>
+                    <th>Kesimpulan[cite: 1]</th>
+                </tr>
+                <tr>
+                    <td>nama[cite: 1]</td>
+                    <td>string</td>
+                    <td>string</td>
+                    <td rowspan="2">String adalah data teks (dibatasi tanda kutip), sedangkan Number adalah data angka murni untuk perhitungan[cite: 1, 2].</td>
+                </tr>
+                <tr>
+                    <td>umur[cite: 1]</td>
+                    <td>number</td>
+                    <td>number</td>
+                </tr>
+            </table>
+            <br>
+            <p><strong>Temuan:</strong> Apa perbedaan String dan Number berdasarkan eksperimenmu?[cite: 2]</p>
+            <p><em>Jawaban:</em> String adalah tipe data teks yang tidak bisa langsung dioperasikan secara aritmatika, sedangkan Number adalah angka yang bisa dijumlahkan/dihitung[cite: 1, 2].</p>
+            <button onclick="jalankanAktivitas2()">Jalankan Aktivitas 2 di Console</button>
+        </section>
+
+        <!-- E. Aktivitas 3 -->
+        <section class="lkpd-section">
+            <h3>E. AKTIVITAS 3: KONVERSI STRING MENJADI NUMBER</h3>
+            <p>Perbaiki program agar menghasilkan 30. Gunakan Number()[cite: 2]:</p>
+            <pre><code>let a = "10";
+let b = "20";
+let hasil = Number(a) + Number(b);
+console.log(hasil);</code></pre>
+            <p><strong>Catat hasil program[cite: 2]:</strong> 30[cite: 2]</p>
+            <button onclick="jalankanAktivitas3()">Jalankan Aktivitas 3</button>
+        </section>
+
+        <!-- F. Aktivitas 4 -->
+        <section class="lkpd-section">
+            <h3>F. AKTIVITAS 4 - PROGRAM KASIR SEDERHANA</h3>
+            <p>Buat program yang meminta harga barang dan jumlah barang melalui prompt(), mengubah keduanya menjadi Number, lalu menghitung total harga[cite: 2].</p>
+            <pre><code>let harga = Number(prompt("Masukkan harga: "));
+let jumlah = Number(prompt("Masukkan jumlah: "));
+let total = harga * jumlah;
+console.log("Total belanja = " + total);</code></pre>
+
+            <table class="lkpd-table">
+                <tr>
+                    <th>Input Uji[cite: 2]</th>
+                    <th>Nilai[cite: 2]</th>
+                </tr>
+                <tr>
+                    <td>Harga[cite: 2]</td>
+                    <td>Rp 10.000</td>
+                </tr>
+                <tr>
+                    <td>Jumlah[cite: 2]</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Total seharusnya[cite: 2]</td>
+                    <td>Rp 30.000</td>
+                </tr>
+                <tr>
+                    <td>Total program[cite: 2]</td>
+                    <td id="resKasir">Rp 30.000 (Klik tombol untuk uji)</td>
+                </tr>
+            </table>
+            <br>
+            <button onclick="jalankanKasir()">Jalankan Program Kasir</button>
+        </section>
+
+        <!-- G. Tantangan -->
+        <section class="lkpd-section">
+            <h3>G. TANTANGAN: PROGRAM HITUNG NILAI</h3>
+            <p>Buat program dengan input nilai tugas, UTS, dan UAS. Konversikan semua input menggunakan Number(), lalu hitung rata-rata dengan rumus (tugas + UTS + UAS) / 3[cite: 2].</p>
+            <p><strong>Algoritma saya[cite: 2]:</strong></p>
+            <ol>
+                <li>Meminta input nilai tugas, UTS, dan UAS melalui <code>prompt()</code>[cite: 2].</li>
+                <li>Mengonversi seluruh input string menjadi angka menggunakan fungsi <code>Number()</code>[cite: 2].</li>
+                <li>Menghitung total nilai ketiganya lalu membagi 3 menggunakan rumus <code>(tugas + UTS + UAS) / 3</code>[cite: 2].</li>
+                <li>Menampilkan hasil rata-rata nilai ke console atau layar.</li>
+            </ol>
+            <button onclick="jalankanTantangan()">Jalankan Program Hitung Nilai</button>
+        </section>
+
+        <!-- H. Think Pair Share -->
+        <section class="lkpd-section">
+            <h3>H. THINK PAIR SHARE</h3>
+            <table class="lkpd-table">
+                <tr>
+                    <th>Pertanyaan[cite: 3]</th>
+                    <th>Jawaban (M. Maulana A.F.)[cite: 3]</th>
+                </tr>
+                <tr>
+                    <td>Mengapa prompt() perlu dikonversi jika hasilnya ingin dihitung?[cite: 3]</td>
+                    <td>Karena <code>prompt()</code> selalu menghasilkan tipe data String[cite: 1, 3], sehingga jika tidak dikonversi, operasi matematika gagal atau terjadi penggabungan teks.</td>
+                </tr>
+                <tr>
+                    <td>Apa perbedaan "10" dengan 10?[cite: 3]</td>
+                    <td><code>"10"</code> adalah teks (String) yang diapit tanda kutip, sedangkan <code>10</code> adalah angka murni (Number)[cite: 3].</td>
+                </tr>
+                <tr>
+                    <td>Apa yang terjadi jika lupa Number()?[cite: 3]</td>
+                    <td>Perhitungan matematika gagal dan terjadi penggabungan teks (concatenation)[cite: 3].</td>
+                </tr>
+            </table>
+            <p><strong>Pair & Share:</strong> Bandingkan jawaban dengan teman, lalu sampaikan satu temuan penting kepada kelas[cite: 3].</p>
+        </section>
+
+        <!-- I. Refleksi -->
+        <section class="lkpd-section">
+            <h3>I. REFLEKSI 3-2-1</h3>
+            <p><strong>3 hal yang saya pahami[cite: 3]:</strong></p>
+            <ol>
+                <li>Perbedaan mendasar antara tipe data String dan Number[cite: 1, 3].</li>
+                <li>Fungsi <code>prompt()</code> selalu mengembalikan tipe data String[cite: 1, 3].</li>
+                <li>Cara mengonversi string menjadi angka menggunakan fungsi <code>Number()</code>[cite: 1, 3].</li>
+            </ol>
+            <p><strong>2 hal yang masih membingungkan[cite: 3]:</strong></p>
+            <ol>
+                <li>Penanganan error jika pengguna menginput huruf pada form angka.</li>
+                <li>Perbedaan fungsi <code>Number()</code> dengan <code>parseInt()</code>.</li>
+            </ol>
+            <p><strong>1 hal yang ingin saya coba pada program berikutnya[cite: 3]:</strong></p>
+            <p>Membuat aplikasi web interaktif yang menampilkan hasil kalkulasi langsung ke elemen HTML.</p>
+        </section>
+
+        <!-- J. Penilaian Diri -->
+        <section class="lkpd-section">
+            <h3>J. PENILAIAN DIRI</h3>
+            <table class="lkpd-table">
+                <tr>
+                    <th>Pernyataan[cite: 3]</th>
+                    <th>Ya[cite: 3]</th>
+                    <th>Belum[cite: 3]</th>
+                </tr>
+                <tr>
+                    <td>Saya dapat membedakan String dan Number[cite: 3].</td>
+                    <td>☑[cite: 3]</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Saya memahami prompt() menghasilkan String[cite: 3].</td>
+                    <td>☑[cite: 3]</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Saya dapat menggunakan Number()[cite: 3].</td>
+                    <td>☑[cite: 3]</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Saya dapat menggunakan String()[cite: 3].</td>
+                    <td>☑[cite: 3]</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Saya dapat menemukan kesalahan tipe data[cite: 3].</td>
+                    <td>☑[cite: 3]</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Saya dapat membuat program input dan hitung sederhana[cite: 3].</td>
+                    <td>☑[cite: 3]</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

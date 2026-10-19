@@ -1,0 +1,124 @@
+body {
+    font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+    background-color: #eef2f5;
+    color: #111;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+}
+
+.lkpd-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.lkpd-header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.lkpd-header h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.lkpd-header h2 {
+    font-size: 16px;
+    margin-top: 0;
+    color: #444;
+}
+
+.identitas-table {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.identitas-table td {
+    padding: 4px;
+}
+
+.lkpd-section {
+    margin-bottom: 25px;
+}
+
+.lkpd-section h3 {
+    font-size: 15px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+.box-soal {
+    background: #f9f9f9;
+    border: 1px dashed #666;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.lkpd-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.lkpd-table th, .lkpd-table td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.lkpd-table th {
+    background-color: #f2f2f2;
+}
+
+pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+code {
+    font-family: Consolas, monospace;
+    background: #eee;
+    padding: 2px 4px;
+    color: #c7254e;
+}
+
+pre code {
+    background: transparent;
+    color: #f8f8f2;
+    padding: 0;
+}
+
+button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1a252f;
+}
