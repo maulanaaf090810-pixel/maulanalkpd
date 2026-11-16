@@ -13,3 +13,9 @@ let harga = Number(prompt("Masukkan harga: "));
 let jumlah = Number(prompt("Masukkan jumlah: "));
 let total = harga * jumlah;
 console.log("Total belanja = " + total);
+let tugas = Number(prompt("Masukkan nilai tugas"));
+let UTS = Number(prompt("Masukkan nilai UTS"));
+let UAS = Number(prompt("Masukkan nilai UAS"));
+
+let ratarata = (tugas + UTS + UAS) / 3;
+console.log("Nilai rata-rata Anda: " + ratarata);
